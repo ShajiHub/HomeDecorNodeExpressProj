@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  .cactiImgHolder
+    h1= error
+    .cactiGallery
+        img(src='images/cacti/cactiSell/Cereus Repandus Monstrosus.jpg' alt='Cactus1' )
+        #cacti1.cactiName Cereus Repandus Monstrosus 4-6"
+        form(action='cacti' method='post')
+          input(type='hidden' name='cTitle' value='Cereus Repandus Monstrosus')
+          button#getInfo(type='submit' value='Submit') Get Info
+    .cactiGallery
+        img(src='images/cacti/cactiSell/Lepismium Houlletianum.jpg' alt='Cactus2' )
+        #cacti2.cactiName Lepismium Houlletianum 4"
+        form(action='cacti' method='post')
+          input(type='hidden' name='cTitle' value='Lepismium Houlletianum')
+          button#getInfo(type='submit' value='Submit') Get Info
+    .cactiGallery
+        img(src='images/cacti/cactiSell/Mammillaria Ernestii.jpg' alt='Cactus3' )
+        #cacti3.cactiName Lepismium Houlletianum 4"
+        form(action='cacti' method='post')
+          input(type='hidden' name='cTitle' value='Mammillaria Ernestii')
+          button#getInfo(type='submit' value='Submit') Get Info
+    .cactiGallery
+        img(src='images/cacti/cactiSell/Opuntia Microdasys Yellow Dots.jpg' alt='Cactus4' )
+        #cacti4.cactiName Opuntia Microdasys Yellow Dots 2.5"-4''
+        form(action='cacti' method='post')
+          input(type='hidden' name='cTitle' value='Opuntia Microdasys Yellow Dots')
+          button#getInfo(type='submit' value='Submit') Get Info
+    .cactiGallery
+        img(src='images/cacti/cactiSell/Opuntia Subulata.jpg' alt='Cactus5')
+        #cacti5.cactiName Opuntia Subulata 2.5-4'' 
+        form(action='cacti' method='post')
+          input(type='hidden' name='cTitle' value='Opuntia Subulata')
+          button#getInfo(type='submit' value='Submit') Get Info

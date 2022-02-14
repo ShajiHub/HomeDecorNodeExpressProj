@@ -1,0 +1,26 @@
+extends layout
+
+block content 
+  .loginImgHolder
+    h1#stitle Signup form
+    form#loginform(action='signup' method='post')
+      .container
+      label
+        b Firstname
+      input.lform(type='text' placeholder='Enter First name' name='fname' required='')
+      label
+        b Lastname
+      input.lform(type='text' placeholder='Enter Last name' name='lname' )
+      label
+        b Email
+      input.lform(type='email' placeholder='Enter Email' name='email' )
+      label
+        b Password
+      input.lform(type='password' placeholder='Enter Password' name='pwd' )
+      button(type='submit' value='Login') Login
+
+    h3= message 
+    h2= error
+
+      
+      

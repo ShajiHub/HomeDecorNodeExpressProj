@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .loginImgHolder
+    h1#stitle Login form
+     form#loginform(action='login' method='post')
+      .imgcontainer
+        img.logo(src='images/shaji_logo_geometric.png' alt='logo')
+      .container
+        label
+          b Email
+        input.lform(type='email' placeholder='Enter Email' name='email' )
+        label
+          b Password
+        input.lform(type='password' placeholder='Enter Password' name='pwd' )
+        button#lbutton(type='submit' value='Login') Login
+        
+        input(type='checkbox' checked='checked' name='remember')
+        
+        |   Remember me
+      .container
+        button.cancelbtn(type='cancel' onclick="window.location='login';return false;" value="cancel") Cancel
+        span.pd
+          | Forgot 
+          a(href='resetpass') password?
+        br
+        h3= error 

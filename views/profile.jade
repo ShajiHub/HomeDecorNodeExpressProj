@@ -1,0 +1,63 @@
+extends layout
+
+block content 
+  .loginImgHolder
+      a.button#btn(href='/logout') Logout
+      .main
+        h1#stitle #{userFirstName} #{userLastName}'s Profile
+        .card
+          .card-body
+            i.fa.fa-pen.fa-xs.edit
+            table
+              tbody
+                tr
+                  td Name
+                  td :
+                  td #{userFirstName}
+                tr
+                  td Email
+                  td :
+                  td #{userEmail}
+                tr
+                  td Hobbies
+                  td :
+                  td Coding, Singing, Volunteering
+                tr
+                  td Experience
+                  td :
+                  td Teaching Faculty/Tutor/Web Developer
+                tr
+                  td programming Languages
+                  td :
+                  td Java, SQL, HTML, CSS, Java
+        h2#stitle SOCIAL MEDIA
+          .card
+            .card-body
+            i.fa.fa-pen.fa-xs.edit
+            .social-media
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-facebook.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-twitter.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-instagram.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-invision.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-github.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-whatsapp.fa-stack-1x.fa-inverse
+              span.fa-stack.fa-sm
+                i.fas.fa-circle.fa-stack-2x
+                i.fab.fa-snapchat.fa-stack-1x.fa-inverse
+            
+
+              
+ 
+

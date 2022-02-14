@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .plantImgHolder
+    .prodBuy
+      img(src='#{cactiImg}' alt='cacti' style='width:140%; height:150%')
+    .prodDetails
+      h1.ProdName #{cactiName}
+      p.prodPrice $#{cactiPrice}
+      p.prodDesc
+      | #{cactiDescription}
+      p
+        button Add to Cart
+
+  
+    .prodSearch
+      h1.ProdName You May also like
+      img(src='#{cactiImg}' alt='cacti' style='width:100%; height:120%')
+    .prodDetails
+      h1.ProdName #{cactiName}
+      p.prodPrice $#{cactiPrice}
+      p.prodDesc
+      | #{cactiDescription}
+      p
+        button Add to Cart
+
+  
+    
+     
+
+
+
+

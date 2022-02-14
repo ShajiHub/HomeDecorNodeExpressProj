@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title NODEJS Project
+    
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='stylesheets/style.css')
+  body
+    nav
+      li
+        a(href='/' title='link') HOME
+      li.ndropdown
+        a(href='plants' title='link') PLANTS
+        .ndropdown-content
+          a(href='tropical') TROPICAL PLANTS
+          a(href='cacti') CACTI AND SUCCULENTS
+          a(href='herbs') HERBS
+      li.ndropdown
+        a(href='lights' title='link') LIGHTS
+        .ndropdown-content
+          a(href='lamps') LAMPS
+          a(href='growlights') GROW LIGHT 
+          a(href='ceilinglights') CEILING LIGHTS
+          a(href='chandeliers') CHANDELIERS
+      li.ndropdown
+        a(href='others' title='link') OTHERS 
+        .ndropdown-content
+          a(href='terrariums') CLOSED TERRARIUMS
+          a(href='gtools') GARDENING TOOLS
+          a(href='eproducts') ELECTRICAL PRODUCTS
+      li
+        a(href='profile') PROFILE
+      li
+        a(href='contact')
+          | CONTACT
+      li
+        a(href='login') LOGIN
+      li
+        a(href='signup') SIGNUP
+      .search-container
+        form(action='buy' method='post')
+          input(type='text' placeholder='Search...' name='searchStr')
+          button.btn.btn-light(type='submit') Submit
+    
+
+        
+    header
+      video#headervideo(autoplay='' muted='' loop='')
+        source(src='images/homedecor.mp4' type='video/mp4')
+      #siteCaption
+        h1 Home Decor
+        h2 Live with what you love...
+    main
+      block content 
+      
+    footer
+      | © 2022 triOS team. No rights reserved.
+      ul.socials
+        li
+          a(href='#')
+            i.fa.fa-facebook
+        li
+          a(href='#')
+            i.fa.fa-twitter
+        li
+          a(href='#')
+            i.fa.fa-google-plus
+        li
+          a(href='#')
+            i.fa.fa-youtube
+        li
+          a(href='#')
+            i.fa.fa-linkedin-square
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(type='type/javascript', src='javascripts/cactiscript.js')
+
+        
+  
+      #upArr
+    a(href='#header')
+      img(src='images/backk.png' alt='back to top')

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .loginImgHolder
+    h1#stitle Contact Us
+      #contactHolder
+        #contactInfo 
+          h3 Contact Details:
+          ul
+            li
+            span.contact_subtitle Address:
+            |  1234 Street name, Toronto, ON
+            li
+            span.contact_subtitle Email:
+            |  NodeJSProject@triOS.com
+            li
+            span.contact_subtitle Phone:
+            |  123-456-7890
+        form#contactForm(action='contact' method='post')
+  
+          input#name(type='text' size='50' name = 'senederName' placeholder='Enter your name' required='' )
+          br
+          input#email(type='email' size='50' name='senderEmail' placeholder='Enter your email' )
+          br
+          input#subject(type='text' size='50' name='subject' placeholder='Enter subject' required='' )
+          br
+          textarea#message(cols='60' rows='3' maxlength='200' name='message' placeholder='Type your message here...' required='')
+          br
+          button#submit(type='submit') Send Email
+      iframe#map(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11681.521846400687!2d-81.28491615!3d42.9491862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1634754310063!5m2!1sen!2sca' width='2380' height='600' style=' border: 4px solid #838f7e;' allowfullscreen='' loading='lazy')
+        p= message
+        p= error
+
+         

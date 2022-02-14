@@ -1,0 +1,22 @@
+extends layout
+
+block content 
+  .loginImgHolder
+    h3#stitle Reset Password
+    form#resetpasswordform(action='resetpass' method='post')
+      .container
+        label
+          b Email
+        input.lform(type='email' placeholder='Enter Email' name='pemail')
+        label
+          b Password
+        input.lform(type='password' placeholder='Enter Password' name='pwdone')
+        label
+          b Please Enter your Password again
+        input.lform(type='password' placeholder='Re-Enter Password' name='pwdtwo')
+        button#lbutton(type='submit' value='Login') Reset Password
+    .container
+      button.cancelbtn(type='cancel' onclick="window.location='login';return false;" value='cancel') Cancel
+      h3= error
+
+
